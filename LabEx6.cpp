@@ -6,24 +6,22 @@ using namespace std;
 int main()
 {
     int val[3] = {84, 76, 48};
-    int ave = 0, sum = 0;
-    int i = 0;
+    int i, ave = 0, sum = 0;
 
-    cout<<"The Values are: "<<endl;
+    cout<<"The Values are: ";
 
-
+    i = 0;
     while (i < 3)
     {
-        cout<<val[i]<<endl;
+        cout<<val[i]<<" ";
         sum += val[i];
         i++;
     }
 
-
     ave = sum / 3;
 
     cout<<endl;
-    cout<<"The Average Value is: "<<ave<<endl;
+    cout<<"The Average Value is: "<<ave<<endl<<endl;
 
     return EXIT_SUCCESS;
 }
